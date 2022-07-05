@@ -281,6 +281,8 @@ body {
 }
 .section-hero__wrapper {
   padding: 0 30px 0 30px;
+  max-width: 800px;
+  margin: 0 auto;
   height: 40vw;
   position: relative;
   z-index: 2;
@@ -302,8 +304,8 @@ body {
 .section-hero__img {
   max-width: 350px;
   max-height: calc(100% - 30px);
-  height: calc(100% - 30px);
-  align-self: flex-end;
+  height: calc(100% - 40px);
+  /*align-self: flex-end;*/
   position: relative;
 }
 .section-hero__img-item {
@@ -325,13 +327,13 @@ body {
   text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
 }
 .section-hero__content {
-  padding-top: 116px;
+  padding-top: 20px;
 }
 .section-hero__title {
   margin-top: 20px;
   position: relative;
 }
-.section-hero__title::before {
+/*.section-hero__title::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -341,14 +343,14 @@ body {
   height: 330px;
   display: block;
   background: url("../images/hero-title-bg.png") center center/contain no-repeat;
-}
+}*/
 .section-hero__title-img {
   position: relative;
   z-index: 2;
-  max-height: 150px;
+  max-height: 328px;
 }
 .section-hero__btn {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -826,6 +828,7 @@ body {
 .catalog-wrapper {
   padding-top: 27px;
   position: relative;
+  overflow: hidden;
 }
 .catalog-wrapper::before {
   content: "";
@@ -1139,14 +1142,14 @@ body {
   }
 
   .section-hero__content {
-    padding-top: 140px;
+    /*padding-top: 140px;*/
     padding-bottom: 50px;
   }
   .section-hero__wrapper {
     height: auto;
   }
   .section-hero__title {
-    height: 100px;
+    height: 250px;
   }
   .section-hero__title-img {
     height: 100%;
@@ -1175,13 +1178,13 @@ body {
   background: rgba(255, 255, 255, 0.9);
 }
 .popup__container {
-  max-width: 340px;
+  max-width: 430px;
   background: #AFE0FC;
   border-radius: 30px;
   position: relative;
 }
 .popup__content {
-  padding: 30px 42px 35px 42px;
+  padding: 30px 20px 35px 20px;
 }
 .popup__title {
   font-family: "Iskra CYR Md", sans-serif;
@@ -1192,20 +1195,25 @@ body {
   color: #003595;
 }
 .popup__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 35px auto 0 auto;
-  max-width: 170px;
+  max-width: 380px;
   list-style: none;
 }
 .popup__list-item {
+  max-width: 170px;
   width: 100%;
   height: 50px;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.popup__list-item + .popup__list-item {
+/*.popup__list-item + .popup__list-item {
   margin-top: 20px;
-}
+}*/
 .popup__list-link {
   display: flex;
   align-items: center;
@@ -1276,6 +1284,10 @@ body {
 @media screen and (max-width: 991px) {
   .section-hero__container::after {
     display: none;
+  }
+
+  .section-hero__img {
+    align-self: flex-end;
   }
 
   .images-row.images-row_reccomend[data-v-5452c966] img {
@@ -1371,6 +1383,9 @@ body {
     height: 60px;
   }
 
+  .section-banner {
+    padding-top: 200px;
+  }
   .section-banner::after, .section-banner::before {
     display: none;
   }
@@ -1780,6 +1795,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
   }
   .section-hero__title-img {
     max-height: unset;
@@ -1791,6 +1807,7 @@ body {
   }
   .section-hero__img:nth-child(1) {
     order: 2;
+    margin: 0 auto;
     z-index: 2;
   }
   .section-hero__img:nth-child(3) {
@@ -1821,3 +1838,48 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.buy-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 144px;
+}
+
+.buy-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  right: -1000px;
+  bottom: 0;
+  margin: auto;
+  width: 1920px;
+  height: 175px;
+  background: url(../images/buy-block-bg.png) center no-repeat;
+  background-size: 100% 100%;
+  image-rendering: optimizequality;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.buy-block .catalog-item__link {
+  position: relative;
+  font-size: 20px;
+  width: 150px;
+  box-shadow: none;
+  border: 3px solid #FFFFFF;
+}
+
+@media only screen and (max-width: 1440px) {
+  .buy-block::before {
+    width: 1440px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .buy-block::before {
+    width: 120%;
+  }
+}
