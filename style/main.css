@@ -650,7 +650,7 @@ body {
 .section-banner {
   position: relative;
 }
-.section-banner::after {
+/*.section-banner::after {
   content: "";
   position: absolute;
   z-index: 5;
@@ -659,7 +659,7 @@ body {
   width: 666px;
   height: 120px;
   background: url("../images/bird-and-cloud.png") center center/contain no-repeat;
-}
+}*/
 .section-banner_no-promo::before {
   right: calc(50% - 360px);
 }
@@ -679,10 +679,10 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: -10vw;
+  top: -190px;
   z-index: 2;
   width: 100%;
-  height: 40vw;
+  height: 768px;
   display: block;
   background: url("../images/banner-bg.png") center center/cover no-repeat;
 }
@@ -1117,11 +1117,6 @@ body {
     height: 54vw;
   }
 }
-@media screen and (min-width: 992px) {
-  .section-banner__wrapper::after {
-    display: none;
-  }
-}
 @media screen and (max-width: 1440px) {
   .catalog-wrapper__header-link {
     right: 0;
@@ -1396,8 +1391,9 @@ body {
     padding-top: 50px;
   }
   .section-banner__wrapper::after {
-    top: -22vw;
-    background: url("../images/banner-bg-m.png") top center/cover no-repeat;
+    top: -190px;
+    height: 380px;
+    background: url("../images/banner-bg-m.png") top center/100% 100% no-repeat;
   }
   .section-stock__container::after, .section-stock__container::before {
     display: none;
@@ -1890,5 +1886,233 @@ body {
 @media only screen and (max-width: 991px) {
   .buy-block::before {
     width: 120%;
+  }
+}
+
+/*bts*/
+.page-wrapper {
+  overflow: hidden;
+}
+
+.section-bts {
+  position: relative;
+  height: 611px;
+  background: url(../images/bts/bts-bg.jpg) center center/cover no-repeat;
+}
+
+.section-bts::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: #fff;
+}
+
+.qr-bts {
+  position: absolute;
+  top: 15px;
+  left: -285px;
+  right: 0;
+  margin: auto;
+  width: 182px;
+  height: 184px;
+  background: url(../images/bts/qr-bg.png) center center/contain no-repeat;
+}
+
+.qr-bts img {
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 101px;
+  height: 101px;
+  transform: rotate(15.39deg);
+}
+
+.section-invertor-banner {
+  position: relative;
+  padding: 30px 0 130px;
+  z-index: 3;
+}
+
+.section-invertor-banner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -20px;
+  width: 666px;
+  height: 120px;
+  background: url(../images/bird-and-cloud.png) center center/contain no-repeat;
+  z-index: 5;
+}
+
+.invertor-banner {
+  position: relative;
+  max-width: 938px;
+  width: 100%;
+  height: 310px;
+  background: url(../images/invertor-banner.png) center/contain no-repeat;
+}
+
+.invertor-banner .btn-orange {
+  position: absolute;
+  top: 100px;
+  right: 32px;
+  bottom: 0;
+  margin: auto;
+  width: 188px;
+  height: 48px;
+}
+
+.invertor-banner::before {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: -80px;
+  bottom: 0;
+  margin: auto;
+  width: 102px;
+  height: 68px;
+  display: block;
+  background: url(../images/cloud.png) center center/contain no-repeat;
+}
+
+.invertor-banner::after {
+  content: '';
+  position: absolute;
+  top: -70px;
+  right: -88px;
+  bottom: 0;
+  margin: auto;
+  width: 176px;
+  height: 116px;
+  display: block;
+  background: url(../images/cloud.png) center center/contain no-repeat;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-bts {
+    height: 450px;
+  }
+
+  .qr-bts {
+    left: -205px;
+    width: 132px;
+    height: 134px;
+  }
+
+  .qr-bts img {
+    width: 71px;
+    height: 71px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-bts {
+    height: 380px;
+  }
+
+  .qr-bts {
+    left: -175px;
+    width: 102px;
+    height: 104px;
+  }
+
+  .qr-bts img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .section-invertor-banner {
+    padding-bottom: 70px;
+  }
+
+  .invertor-banner {
+    max-width: 375px;
+    height: 270px;
+    margin: 0 auto;
+    background: url(../images/invertor-banner-mob.png) center/contain no-repeat;
+  }
+
+  .invertor-banner::before {
+    top: auto;
+    left: -20px;
+    bottom: -80px;
+  }
+
+  .invertor-banner::after {
+    top: -30px;
+    right: 10px;
+    bottom: auto;
+    width: 95px;
+    height: 99px;
+    background: url(../images/sun.png) center center/contain no-repeat;
+  }
+
+  .section-invertor-banner::after {
+    display: none;
+  }
+
+  .invertor-banner .btn-orange {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+  }
+
+  .banner__wrapper::before {
+    display: none;
+  }
+
+  .banner {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .section-bts {
+    height: 656px;
+    background: url(../images/bts/bts-bg-mob.jpg) center top/102% no-repeat;
+  }
+
+  .section-bts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 656px;
+    background: url(../images/bts/bts-bg-elem.png) center/373px no-repeat;
+  }
+
+  .section-bts .btn-orange {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex !important;
+    width: 170px;
+    height: 48px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section-bts::before {
+    background-size: 350px;
+  }
+
+  .invertor-banner .btn-orange {
+    bottom: 0;
   }
 }
