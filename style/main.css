@@ -49,6 +49,7 @@ body {
 .btn-orange {
   width: 250px;
   height: 50px;
+  padding: 16px 0 18px;
   border-radius: 30px;
   background: #FECF0A;
   box-shadow: inset 0px -3px 0px #E2B703;
@@ -640,6 +641,7 @@ body {
   border-radius: 30px;
   width: 130px;
   height: 48px;
+  padding: 16px 0 18px;
   font-size: 16px;
   font-family: "Iskra CYR Md", sans-serif;
   text-transform: uppercase;
@@ -685,6 +687,11 @@ body {
   height: 768px;
   display: block;
   background: url("../images/banner-bg.png") center center/cover no-repeat;
+}
+@media (min-width: 1920px) {
+  .section-banner__wrapper::after {
+    background-size: 100% 100%;
+  }
 }
 .section-banner__wrapper_no-promo::after {
   display: none;
@@ -878,6 +885,11 @@ body {
   right: -200px;
   z-index: 3;
 }
+@media screen and (max-width: 1680px) {
+  .catalog-wrapper__header-link {
+    right: 0;
+  }
+}
 .catalog-wrapper__header-container {
   position: relative;
 }
@@ -1012,6 +1024,7 @@ body {
   justify-content: center;
   width: 50px;
   height: 20px;
+  padding: 0 0 3px;
   background: #003595;
   border-radius: 10px;
   font-family: "Iskra CYR Md", sans-serif;
@@ -1379,7 +1392,7 @@ body {
   }
 
   .section-banner {
-    padding-top: 200px;
+    padding-top: 130px;
   }
   .section-banner::after, .section-banner::before {
     display: none;
@@ -1391,8 +1404,8 @@ body {
     padding-top: 50px;
   }
   .section-banner__wrapper::after {
-    top: -190px;
-    height: 380px;
+    top: -120px;
+    height: 330px;
     background: url("../images/banner-bg-m.png") top center/100% 100% no-repeat;
   }
   .section-stock__container::after, .section-stock__container::before {
@@ -1845,12 +1858,19 @@ body {
 /*# sourceMappingURL=main.css.map */
 
 .buy-block {
-  position: relative;
+  position: fixed;
+  bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 144px;
+  z-index: 3;
+}
+
+.buy-block.stated {
+  position: relative;
+  bottom: auto;
 }
 
 .buy-block::before {
@@ -1897,7 +1917,9 @@ body {
 .section-bts {
   position: relative;
   height: 611px;
-  background: url(../images/bts/bts-bg.jpg) center center/cover no-repeat;
+  background: url(../images/bts/bts-bg.jpg) center 0/cover no-repeat;
+  image-rendering: optimizequality;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .section-bts::after {
@@ -1957,6 +1979,8 @@ body {
   width: 100%;
   height: 310px;
   background: url(../images/invertor-banner.png) center/contain no-repeat;
+  image-rendering: optimizequality;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .invertor-banner .btn-orange {
