@@ -856,6 +856,11 @@ body {
   height: 200px;
   background: url("../images/cloud-and-bird.png") center center/contain no-repeat;
 }
+@media screen and (max-width: 1366px) {
+  .catalog-wrapper::after {
+    right: 15px;
+  }
+}
 .catalog-wrapper_no-promo::after {
   display: none;
 }
@@ -881,14 +886,9 @@ body {
 }
 .catalog-wrapper__header-link {
   position: absolute;
-  top: calc(50% - 9px);
-  right: -200px;
+  top: 60px;
+  right: 115px;
   z-index: 3;
-}
-@media screen and (max-width: 1680px) {
-  .catalog-wrapper__header-link {
-    right: 0;
-  }
 }
 .catalog-wrapper__header-container {
   position: relative;
@@ -1128,11 +1128,6 @@ body {
 @media screen and (max-width: 1200px) {
   .video-container {
     height: 54vw;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .catalog-wrapper__header-link {
-    right: 0;
   }
 }
 @media screen and (max-width: 1366px) {
@@ -1528,16 +1523,14 @@ body {
     background: url("../images/cloud.png") center center/contain no-repeat;
   }
   .catalog-wrapper__header {
-    margin-bottom: 50px;
+    margin-bottom: 68px;
   }
   .catalog-wrapper__header-link {
-    position: relative;
-    top: 0;
+    top: 130px;
+    left: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    width: 210px;
+    margin: auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1895,6 +1888,12 @@ body {
   width: 270px;
   box-shadow: none;
   border: 3px solid #FFFFFF;
+}
+
+@media only screen and (min-width: 1921px) {
+  .buy-block::before {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
