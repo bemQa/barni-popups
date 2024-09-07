@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Odds';
-  src: url('../fonts/Odds/Odds-Regular.woff2') format('woff2'),
-  url('../fonts/Odds/Odds-Regular.woff') format('woff');
+  src: url('../fonts/Odds/Odds-Regular.woff2') format('woff2'), url('../fonts/Odds/Odds-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,13 +8,11 @@
 
 @font-face {
   font-family: 'Iskra CYR Md';
-  src: url('../fonts/Iskra/IskraCYRMd.woff2') format('woff2'),
-  url('../fonts/Iskra/IskraCYRMd.woff') format('woff');
+  src: url('../fonts/Iskra/IskraCYRMd.woff2') format('woff2'), url('../fonts/Iskra/IskraCYRMd.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-
 
 * {
   margin: 0;
@@ -29,7 +26,7 @@ html {
 }
 
 body {
-  background: url("../images/stock-bg.jpg") center center/contain repeat-y;
+  background: url('../images/stock-bg.jpg') center center/contain repeat-y;
 }
 
 .container {
@@ -61,9 +58,8 @@ body {
 
     border-radius: 30px;
 
-    background: #FECF0A;
-    box-shadow: inset 0px -3px 0px #E2B703;
-
+    background: #fecf0a;
+    box-shadow: inset 0px -3px 0px #e2b703;
 
     font-family: 'Iskra CYR Md', sans-serif;
     font-weight: 400;
@@ -87,14 +83,13 @@ body {
       width: 100%;
       height: 120vh;
 
-      background: url("../images/stock-bg.png") center center/contain no-repeat;
+      background: url('../images/stock-bg.png') center center/contain no-repeat;
     }
   }
 }
 
 .stock {
   position: relative;
-
 
   border-radius: 30px;
 
@@ -110,7 +105,7 @@ body {
     height: 125px;
     display: block;
 
-    background: url("../images/cloud.png") center center/contain no-repeat;
+    background: url('../images/cloud.png') center center/contain no-repeat;
   }
 
   &::before {
@@ -124,7 +119,7 @@ body {
     height: 400px;
     display: block;
 
-    background: url("../images/stock-sun-bird.png") center center/contain no-repeat;
+    background: url('../images/stock-sun-bird.png') center center/contain no-repeat;
   }
 
   &-container {
@@ -140,7 +135,7 @@ body {
     border-radius: 30px;
     overflow: hidden;
 
-    background: url("../images/stock-bg-second.jpg") center center/cover no-repeat;
+    background: url('../images/stock-bg-second.jpg') center center/cover no-repeat;
 
     &::before {
       content: '';
@@ -148,12 +143,11 @@ body {
       bottom: 0;
       left: -150px;
 
-
       border-bottom-left-radius: 30px;
       width: 700px;
       height: 160px;
 
-      background: url("../images/stock-footer.png") center center/contain no-repeat;
+      background: url('../images/stock-footer.png') center center/contain no-repeat;
     }
 
     &::after {
@@ -168,7 +162,7 @@ body {
 
       display: block;
 
-      background: url("../images/shild.png") center center/contain no-repeat;
+      background: url('../images/shild.png') center center/contain no-repeat;
     }
   }
 
@@ -257,7 +251,8 @@ body {
       line-height: 28px;
       color: #003595;
 
-      text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
+      text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
+        -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
     }
   }
 
@@ -290,9 +285,8 @@ body {
     width: 250px;
     height: 50px;
 
-
-    background: #FECF0A;
-    box-shadow: inset 0px -3px 0px #E2B703;
+    background: #fecf0a;
+    box-shadow: inset 0px -3px 0px #e2b703;
     border-radius: 30px;
 
     font-family: 'Iskra CYR Md', sans-serif;
@@ -311,18 +305,17 @@ body {
   }
 }
 
-
 .section {
   position: relative;
   z-index: 2;
 
-  img{
+  img {
     image-rendering: optimizequality;
     image-rendering: -webkit-optimize-contrast;
   }
 
   &-hero {
-    background: url("../images/hero-bg.png") center center/cover no-repeat;
+    background: url('../images/hero-bg.png') center center/cover no-repeat;
 
     &::before {
       content: '';
@@ -334,7 +327,7 @@ body {
       height: 120px;
       display: block;
 
-      background: url("../images/hero-top.png") bottom center/cover no-repeat;
+      background: url('../images/hero-top.png') bottom center/cover no-repeat;
     }
 
     &::after {
@@ -348,7 +341,7 @@ body {
       height: 85px;
       display: block;
 
-      background: url("../images/hero-table.png") bottom center/contain no-repeat;
+      background: url('../images/hero-table.png') bottom center/contain no-repeat;
     }
 
     &__logo {
@@ -394,7 +387,7 @@ body {
         height: 10vw;
         display: block;
 
-        background: url("../images/hero-products.png") center center/contain no-repeat;
+        background: url('../images/hero-products.png') center center/contain no-repeat;
       }
     }
 
@@ -427,7 +420,8 @@ body {
         line-height: 28px;
         color: #003595;
 
-        text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
+        text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
+          -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
       }
     }
 
@@ -450,7 +444,7 @@ body {
         height: 330px;
         display: block;
 
-        background: url("../images/hero-title-bg.png") center center/contain no-repeat;
+        background: url('../images/hero-title-bg.png') center center/contain no-repeat;
       }
 
       &-img {
@@ -470,7 +464,7 @@ body {
       position: relative;
       z-index: 2;
 
-      span{
+      span {
         margin-right: 5px;
       }
     }
@@ -495,7 +489,7 @@ body {
         width: 125px;
         height: 85px;
 
-        background: url("../images/cloud.png") center center/contain no-repeat;
+        background: url('../images/cloud.png') center center/contain no-repeat;
       }
 
       &::before {
@@ -507,21 +501,21 @@ body {
         bottom: -150px;
         right: 230px;
 
-        background: url("../images/cloud.png") center center/contain no-repeat;
+        background: url('../images/cloud.png') center center/contain no-repeat;
       }
     }
   }
 
   &-video {
-    background-color: #E27F30;
+    background-color: #e27f30;
 
-    border-bottom: 7px solid #FFFFFF;
+    border-bottom: 7px solid #ffffff;
 
     position: relative;
 
     &__wrapper {
       padding: 100px 0 100px 0;
-      background: url("../images/video-bg.png") center center/cover no-repeat;
+      background: url('../images/video-bg.png') center center/cover no-repeat;
 
       position: relative;
 
@@ -545,7 +539,7 @@ body {
       width: max-content;
 
       font-size: 24px;
-      font-family: "Iskra CYR Md", sans-serif;
+      font-family: 'Iskra CYR Md', sans-serif;
       font-weight: 500;
 
       color: #fff;
@@ -562,7 +556,7 @@ body {
         display: block;
         margin-right: 10px;
 
-        background: url("../images/video-arrow.svg") center center/contain no-repeat;
+        background: url('../images/video-arrow.svg') center center/contain no-repeat;
       }
     }
   }
@@ -570,14 +564,14 @@ body {
   &__title {
     color: #003595;
 
-
     font-size: 42px;
     line-height: 49px;
     text-align: center;
 
     font-family: 'Odds', sans-serif;
 
-    text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
+    text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
+      -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
   }
 
   &__desc {
@@ -659,7 +653,7 @@ body {
 
       padding-left: 320px;
 
-      background: #AFE0FC;
+      background: #afe0fc;
       box-shadow: 0px 0px 27px rgba(45, 96, 172, 0.2);
       border-radius: 10px;
 
@@ -675,7 +669,7 @@ body {
         width: 100%;
         height: 106px;
 
-        background: url("../images/cloud-stock.png") center center/contain no-repeat;
+        background: url('../images/cloud-stock.png') center center/contain no-repeat;
       }
 
       &::after {
@@ -688,16 +682,15 @@ body {
         width: 235px;
         height: 45px;
 
-        background: url("../images/branch.svg") center center/contain no-repeat;
+        background: url('../images/branch.svg') center center/contain no-repeat;
       }
-
     }
 
     &__desc {
       position: relative;
       z-index: 2;
 
-      font-family: "Iskra CYR Md", sans-serif;
+      font-family: 'Iskra CYR Md', sans-serif;
       font-size: 20px;
       line-height: 28px;
       color: #003595;
@@ -718,8 +711,8 @@ body {
 
       margin-top: 20px;
 
-      background: #FECF0A;
-      box-shadow: inset 0px -3px 0px #E2B703;
+      background: #fecf0a;
+      box-shadow: inset 0px -3px 0px #e2b703;
       border-radius: 30px;
 
       font-family: 'Iskra CYR Md', sans-serif;
@@ -732,7 +725,7 @@ body {
 }
 
 .banner {
-  background: linear-gradient(180deg, #A2CF5F -10.99%, #598B0E 92.45%);
+  background: linear-gradient(180deg, #a2cf5f -10.99%, #598b0e 92.45%);
   border-radius: 30px;
 
   position: relative;
@@ -747,7 +740,8 @@ body {
     }
   }
 
-  &__bear, &__box {
+  &__bear,
+  &__box {
     height: 120%;
     transform: translateY(-8.5%);
 
@@ -767,7 +761,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    background: url("../images/bg-banner.jpg") center center/cover no-repeat;
+    background: url('../images/bg-banner.png') center center/cover no-repeat;
     border-radius: 30px;
 
     position: relative;
@@ -784,7 +778,7 @@ body {
       height: 116px;
       display: block;
 
-      background: url("../images/cloud.png") center center/contain no-repeat;
+      background: url('../images/cloud.png') center center/contain no-repeat;
     }
 
     &::after {
@@ -797,7 +791,7 @@ body {
       height: 68px;
       display: block;
 
-      background: url("../images/cloud.png") center center/contain no-repeat;
+      background: url('../images/cloud.png') center center/contain no-repeat;
     }
 
     &_no-promo {
@@ -828,7 +822,7 @@ body {
     font-family: 'Iskra CYR Md', sans-serif;
     font-size: 22px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   &__content {
@@ -847,15 +841,15 @@ body {
 
     margin-top: 8px;
 
-    background: #FECF0A;
-    box-shadow: inset 0px -3px 0px #E2B703;
+    background: #fecf0a;
+    box-shadow: inset 0px -3px 0px #e2b703;
     border-radius: 30px;
 
     width: 130px;
     height: 48px;
 
     font-size: 16px;
-    font-family: "Iskra CYR Md", sans-serif;
+    font-family: 'Iskra CYR Md', sans-serif;
     text-transform: uppercase;
     color: #003595;
 
@@ -878,7 +872,7 @@ body {
       width: 666px;
       height: 120px;
 
-      background: url("../images/bird-and-cloud.png") center center/contain no-repeat;
+      background: url('../images/bird-and-cloud.png') center center/contain no-repeat;
     }
 
     &_no-promo {
@@ -894,7 +888,7 @@ body {
 
         left: 220px;
 
-        background: url("../images/butterfly-and-bird.png") center center/contain no-repeat;
+        background: url('../images/butterfly-and-bird.png') center center/contain no-repeat;
       }
     }
 
@@ -910,12 +904,11 @@ body {
         top: -10vw;
         z-index: 2;
 
-
         width: 100%;
         height: 40vw;
         display: block;
 
-        background: url("../images/banner-bg.png") center center/cover no-repeat;
+        background: url('../images/banner-bg.png') center center/cover no-repeat;
       }
 
       &_no-promo {
@@ -927,12 +920,11 @@ body {
   }
 }
 
-
 .footer {
-  background: url("../images/footer-bg.png") bottom center/contain no-repeat;
+  background: url('../images/footer-bg.png') bottom center/contain no-repeat;
 
   &-second {
-    background: url("../images/footer-bg-second.png") bottom center/contain no-repeat;
+    background: url('../images/footer-bg-second.png') bottom center/contain no-repeat;
 
     position: relative;
 
@@ -953,7 +945,7 @@ body {
         height: 85px;
         display: block;
 
-        background: url("../images/butterfly.png") center center/contain no-repeat;
+        background: url('../images/butterfly.png') center center/contain no-repeat;
       }
     }
   }
@@ -983,7 +975,7 @@ body {
         right: -130px;
         top: 0px;
 
-        background: url("../images/butterfly-and-birds.png") center center/contain no-repeat;
+        background: url('../images/butterfly-and-birds.png') center center/contain no-repeat;
       }
     }
 
@@ -1033,7 +1025,7 @@ body {
   }
 
   &__text {
-    font-family: "Iskra CYR Md", sans-serif;
+    font-family: 'Iskra CYR Md', sans-serif;
 
     font-size: 12px;
     line-height: 14px;
@@ -1075,7 +1067,6 @@ body {
   }
 }
 
-
 .catalog {
   &-stock {
     position: relative;
@@ -1092,7 +1083,7 @@ body {
       height: 255px;
       display: block;
 
-      background: url("../images/cloud-stock.png") center center/contain no-repeat;
+      background: url('../images/cloud-stock.png') center center/contain no-repeat;
     }
 
     &__container {
@@ -1108,7 +1099,7 @@ body {
         height: 150px;
         display: block;
 
-        background: url("../images/cloud.png") center center/contain no-repeat;
+        background: url('../images/cloud.png') center center/contain no-repeat;
       }
     }
   }
@@ -1127,7 +1118,7 @@ body {
       height: 175px;
       display: block;
 
-      background: url("../images/cloud.png") center center/contain no-repeat;
+      background: url('../images/cloud.png') center center/contain no-repeat;
     }
 
     &::after {
@@ -1139,7 +1130,7 @@ body {
       width: 350px;
       height: 200px;
 
-      background: url("../images/cloud-and-bird.png") center center/contain no-repeat;
+      background: url('../images/cloud-and-bird.png') center center/contain no-repeat;
     }
 
     &_no-promo {
@@ -1220,7 +1211,7 @@ body {
 
         margin-right: 6px;
 
-        background: url("../images/arrow.svg") center center/contain no-repeat;
+        background: url('../images/arrow.svg') center center/contain no-repeat;
       }
     }
   }
@@ -1249,7 +1240,7 @@ body {
           height: 130px;
           display: block;
 
-          background: url("../images/bird.png") center center/contain no-repeat;
+          background: url('../images/bird.png') center center/contain no-repeat;
         }
 
         &::after {
@@ -1262,10 +1253,9 @@ body {
           height: 145px;
           display: block;
 
-          background: url("../images/birds.png") center center/contain no-repeat;
+          background: url('../images/birds.png') center center/contain no-repeat;
         }
       }
-
     }
   }
 
@@ -1302,14 +1292,14 @@ body {
         align-items: center;
         justify-content: center;
 
-        background: url("../images/hit-bg.png") center center/cover no-repeat;
+        background: url('../images/hit-bg.png') center center/cover no-repeat;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-        font-family: "Iskra CYR Md", sans-serif;
+        font-family: 'Iskra CYR Md', sans-serif;
         font-size: 10px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
 
@@ -1325,8 +1315,6 @@ body {
         height: 100%;
 
         object-fit: contain;
-
-
       }
     }
 
@@ -1364,10 +1352,10 @@ body {
         background: #003595;
         border-radius: 10px;
 
-        font-family: "Iskra CYR Md", sans-serif;
+        font-family: 'Iskra CYR Md', sans-serif;
         font-size: 14px;
 
-        color: #FECF0A;
+        color: #fecf0a;
       }
     }
 
@@ -1389,8 +1377,8 @@ body {
       width: 110px;
       height: 50px;
 
-      background: #FECF0A;
-      box-shadow: inset 0px -3px 0px #E2B703;
+      background: #fecf0a;
+      box-shadow: inset 0px -3px 0px #e2b703;
       border-radius: 30px;
 
       font-family: 'Iskra CYR Md', sans-serif;
@@ -1403,14 +1391,13 @@ body {
   }
 }
 
-
 .video {
   width: 100%;
   height: 100%;
   position: absolute;
   border-radius: 30px;
 
-  &-wrapper{
+  &-wrapper {
     max-width: 880px;
 
     margin: 0 auto;
@@ -1466,7 +1453,7 @@ body {
       height: 125%;
       display: block;
 
-      background: url("../images/bg-video.png") center center/contain no-repeat;
+      background: url('../images/bg-video.png') center center/contain no-repeat;
     }
 
     &::before {
@@ -1478,7 +1465,7 @@ body {
       height: 24px;
       display: block;
 
-      background: url("../images/video-shadow.svg") center center/contain no-repeat;
+      background: url('../images/video-shadow.svg') center center/contain no-repeat;
     }
   }
 }
@@ -1494,8 +1481,8 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .video{
-    &-container{
+  .video {
+    &-container {
       height: 54vw;
     }
   }
@@ -1513,7 +1500,6 @@ body {
   }
 }
 
-
 @media screen and (max-width: 1440px) {
   .catalog {
     &-wrapper {
@@ -1526,7 +1512,6 @@ body {
   }
 }
 
-
 @media screen and (max-width: 1366px) {
   .stock {
     &::after {
@@ -1535,15 +1520,15 @@ body {
   }
   .footer {
     &__wrapper {
-      padding-left: 70px;
-      padding-right: 50px;
+      padding-left: 150px;
+      padding-right: 150px;
     }
   }
   .catalog {
     &-wrapper {
       &__header {
         &-link {
-          right: 15px;
+          right: -10px;
         }
       }
     }
@@ -1596,13 +1581,13 @@ body {
     align-items: center;
     justify-content: center;
 
-    background: rgba(#fff, .9);
+    background: rgba(#fff, 0.9);
   }
 
   &__container {
     max-width: 340px;
 
-    background: #AFE0FC;
+    background: #afe0fc;
     border-radius: 30px;
 
     position: relative;
@@ -1652,7 +1637,7 @@ body {
 
       padding: 12px 15px;
 
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 10px;
 
       img {
@@ -1675,7 +1660,8 @@ body {
       cursor: pointer;
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       top: 0;
@@ -1697,7 +1683,6 @@ body {
     }
   }
 }
-
 
 @media screen and (max-width: 1139px) {
   .stock {
@@ -1738,8 +1723,8 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-  .section{
-    &-hero{
+  .section {
+    &-hero {
       &__container {
         &::after {
           display: none;
@@ -1765,7 +1750,7 @@ body {
       left: 10px;
       top: -200px;
 
-      background: url("../images/sun.png") center center/contain no-repeat;
+      background: url('../images/sun.png') center center/contain no-repeat;
     }
 
     &::after {
@@ -1786,7 +1771,6 @@ body {
 
       overflow: unset;
 
-
       &::before {
         width: 250px;
         height: 250px;
@@ -1794,7 +1778,7 @@ body {
         left: calc(50% - 100px);
         bottom: unset;
 
-        background: url("../images/stock-circle.svg") right center/cover no-repeat;
+        background: url('../images/stock-circle.svg') right center/cover no-repeat;
       }
 
       &::after {
@@ -1813,8 +1797,7 @@ body {
       position: relative;
       z-index: 2;
 
-
-      background: url("../images/stock-bg-second.jpg") center center/cover no-repeat;
+      background: url('../images/stock-bg-second.jpg') center center/cover no-repeat;
     }
 
     &__img {
@@ -1870,7 +1853,8 @@ body {
   }
   .section {
     &-banner {
-      &::after, &::before {
+      &::after,
+      &::before {
         display: none;
       }
 
@@ -1883,14 +1867,15 @@ body {
 
         &::after {
           top: -22vw;
-          background: url("../images/banner-bg-m.png") top center/cover no-repeat;
+          background: url('../images/banner-bg-m.png') top center/cover no-repeat;
         }
       }
     }
 
     &-stock {
       &__container {
-        &::after, &::before {
+        &::after,
+        &::before {
           display: none;
         }
       }
@@ -1932,7 +1917,8 @@ body {
       padding-right: 0;
       padding-left: 0;
 
-      &::before, &::after {
+      &::before,
+      &::after {
         display: none;
       }
     }
@@ -1988,7 +1974,7 @@ body {
     }
   }
   .footer {
-    background: url("../images/footer-bg-m.png") center center/cover no-repeat;
+    background: url('../images/footer-bg-m.png') center center/cover no-repeat;
 
     &__wrapper {
       flex-direction: column;
@@ -2036,7 +2022,8 @@ body {
     &-block {
       &__wrapper {
         &_birds {
-          &::after, &::before {
+          &::after,
+          &::before {
             display: none;
           }
         }
@@ -2059,7 +2046,7 @@ body {
         top: 24px;
         right: 15px;
 
-        background: url("../images/cloud.png") center center/contain no-repeat;
+        background: url('../images/cloud.png') center center/contain no-repeat;
       }
 
       &__header {
@@ -2097,8 +2084,8 @@ body {
     }
   }
   .section {
-    &-hero{
-      &__content{
+    &-hero {
+      &__content {
         padding-top: 90px;
       }
     }
@@ -2129,7 +2116,7 @@ body {
 
           left: calc(50% - 160px);
           top: -80px;
-          background: url("../images/hero-bg-title-m.png") center center/contain no-repeat;
+          background: url('../images/hero-bg-title-m.png') center center/contain no-repeat;
         }
       }
     }
@@ -2140,8 +2127,8 @@ body {
     }
 
     &__title {
-      font-size: 32px;
-      line-height: 37px;
+      //font-size: 32px;
+      //line-height: 37px;
     }
 
     &__desc {
@@ -2231,7 +2218,6 @@ body {
   }
 }
 
-
 .product-row {
   display: flex;
   align-items: flex-start;
@@ -2257,7 +2243,6 @@ body {
   transform: translateX(-100px);
 }
 
-
 .images-row_product {
   width: 100%;
 }
@@ -2273,7 +2258,7 @@ body {
   /*justify-content: space-between;*/
   justify-content: center;
   align-content: stretch;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 .images-row.images-row_product[data-v-5452c966] {
@@ -2287,7 +2272,7 @@ body {
 }
 
 .images-row[data-v-5452c966]:last-child {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .product-img {
@@ -2320,7 +2305,6 @@ body {
   color: #003595;
 
   font-family: 'Iskra CYR Md', sans-serif;
-
 }
 
 .reccomend {
@@ -2343,7 +2327,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   font-family: 'Iskra CYR Md', sans-serif;
 
@@ -2375,34 +2359,34 @@ body {
     transform: translateX(0);
   }
   .images-row > a[data-v-5452c966] {
-    width: 100%
+    width: 100%;
   }
 
   .images-row > a[data-v-5452c966]:first-child {
-    z-index: 1
+    z-index: 1;
   }
 
   .images-row > a[data-v-5452c966]:nth-child(2) {
     /*margin-top: -4vw;*/
     margin-top: 4vw;
-    z-index: 2
+    z-index: 2;
   }
 
   .images-row > a[data-v-5452c966]:nth-child(3) {
     /*margin-top: -4vw;*/
     margin-top: 4vw;
-    z-index: 3
+    z-index: 3;
   }
 }
 
 @media screen and (max-width: 600px) {
   .section {
     &-hero {
-      background: url("../images/hero-bg-m.png") center center/cover no-repeat;
+      background: url('../images/hero-bg-m.png') center center/cover no-repeat;
 
       &::before {
         height: 39vw;
-        background: url("../images/hero-top-m.png") center center/contain no-repeat;
+        background: url('../images/hero-top-m.png') center center/contain no-repeat;
       }
 
       &__wrapper {
@@ -2459,7 +2443,6 @@ body {
   }
 }
 
-
 .mobile-visible {
   display: none !important;
 }
@@ -2473,3 +2456,372 @@ body {
     display: block !important;
   }
 }
+
+/*---------------------------------------------------------------------------------NEW HERO*/
+
+.section-head img {
+  display: block;
+  object-fit: cover;
+}
+.section-head {
+  background: #3eb1e7 url('../images/hero/bg.jpg') repeat;
+}
+
+.section-head .container {
+  position: relative;
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.headLogo {
+  display: block;
+  width: 180px;
+}
+
+.section-header__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+}
+.section-header__images img {
+  margin-left: 10px;
+}
+
+.section-header__images img:first-child {
+  margin-left: 0px;
+}
+
+.desk {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 50px 20px;
+  background: url('../images/hero/desk.png') no-repeat center top;
+  background-size: 100% 100%;
+}
+
+.desk__title {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Iskra CYR Md', sans-serif;
+  font-style: normal;
+  color: #fff;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.hero-phone {
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
+  animation: 5s linear 0s infinite shake;
+}
+
+.hero-qr {
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: -70px;
+}
+
+.hero-barni {
+  display: block;
+  object-fit: cover;
+  height: auto;
+  position: absolute;
+}
+
+.hero-barni.hero-barni__left {
+  width: 320px;
+  left: -250px;
+  bottom: 0px;
+}
+
+.hero-barni.hero-barni__right {
+  width: 292px;
+  right: -220px;
+  bottom: 50px;
+}
+
+.leaves {
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.leaves__left {
+  right: 100%;
+  height: 70%;
+  transform: translate(100px, -60%);
+}
+
+.leaves__right {
+  left: 100%;
+  height: 60%;
+  transform: translate(-80px, -60%);
+}
+
+.section-banner__wrapper::after {
+  pointer-events: none;
+}
+
+.hero-slider {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: none !important;
+}
+
+.hero-slider .slick-list {
+  padding: 0 !important;
+}
+
+.heroslide {
+  display: inline-flex !important;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroslide .banner__link {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  top: auto;
+  right: auto;
+}
+
+.heroslide img {
+  display: block;
+  width: 240px;
+  margin-bottom: 10px;
+}
+
+.heroslide a {
+  min-width: 240px;
+}
+
+/*arrows*/
+.hero-slider .slick-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  z-index: 2;
+
+  font-size: 0px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.hero-slider .slick-arrow.slick-next {
+  right: -18px;
+  background: rgba(0, 0, 0, 0) url('../images/hero/next.svg') no-repeat center center / cover;
+}
+.hero-slider .slick-arrow.slick-prev {
+  left: -18px;
+  background: rgba(0, 0, 0, 0) url('../images/hero/prev.svg') no-repeat center center / cover;
+}
+
+.mobil_bear_for_hero {
+  position: absolute;
+  right: 50%;
+  bottom: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 1439px) {
+  .section-header {
+    max-width: 790px;
+  }
+  .headLogo {
+    width: 120px;
+    height: 90px;
+  }
+  .section-header__images img {
+    width: 100px;
+    height: 48px;
+  }
+  .section-header__images img:first-child {
+    width: 70px;
+    height: 70px;
+  }
+  .desk {
+    max-width: 790px;
+  }
+  .desk__title {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .hero-qr {
+    width: 78%;
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
+  .hero-barni.hero-barni__left {
+    width: 280px;
+    left: -230px;
+  }
+  .hero-barni.hero-barni__right {
+    width: 250px;
+    right: -190px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .desk {
+    max-width: 680px;
+    padding: 30px 10px;
+  }
+  .hero-phone {
+    margin-top: 20px;
+  }
+  .section-header {
+    max-width: 680px;
+  }
+  .hero-barni.hero-barni__left {
+    width: 220px;
+    left: -150px;
+  }
+  .hero-barni.hero-barni__right {
+    width: 190px;
+    right: -140px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-head {
+    padding-bottom: 120px;
+  }
+  .section-header {
+    max-width: 375px;
+    padding: 10px 0px;
+    justify-content: space-between;
+  }
+  .desk {
+    display: block;
+    max-width: 375px;
+    background: url(../images/hero/desk_mobil.png) no-repeat center top;
+    background-size: 100% 100%;
+  }
+  .hero-phone,
+  .hero-qr {
+    display: none !important;
+  }
+  .desk__title {
+    padding: 0px 20px;
+    max-width: 320px;
+  }
+  .hero-barni.hero-barni__right {
+    width: 150px;
+    right: -15px;
+    bottom: -110px;
+  }
+  .hero-barni.hero-barni__left {
+    display: none;
+  }
+  .hero-slider {
+    display: block !important;
+  }
+  .leaves {
+    display: none !important;
+  }
+  .headLogo {
+    width: 32%;
+    height: auto;
+  }
+  .section-header__images {
+    justify-content: flex-end;
+    position: relative;
+    max-width: 60%;
+  }
+  .section-header__images img {
+    width: 40%;
+    height: auto;
+  }
+  .section-header__images img:first-child {
+    width: 33.34%;
+    height: auto;
+  }
+  .heroslide img {
+    max-width: 84%;
+  }
+  .mobil_bear_for_hero {
+    display: block;
+    z-index: 5;
+    pointer-events: none;
+    transform: translate(22%, 8%);
+  }
+}
+
+/*rotate [animation: 4s linear 0s infinite alternate shake] */
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  90% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  92% {
+    transform: rotate(14deg) translate(4px, 0px);
+  }
+  94% {
+    transform: rotate(-14deg) translate(-4px, 0px);
+  }
+  96% {
+    transform: rotate(14deg) translate(4px, 0px);
+  }
+  98% {
+    transform: rotate(-14deg) translate(-4px, 0px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+}
+
+.footer__text {
+  margin: 5px 0px;
+}
+
+.footer__button {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 26px;
+  border-radius: 30px;
+  background: #fff;
+  padding: 0px 16px 2px 16px;
+  color: #97be63;
+  font-family: 'Iskra CYR Md', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+
